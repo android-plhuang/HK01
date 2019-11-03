@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.SearchActivity">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/llTitle">
+
+        <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:padding="@dimen/dp_10"
+                android:src="@drawable/icon_return"/>
+
+        <EditText
+                android:id="@+id/edKeyWord"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="#F6F6F6"
+                android:gravity="center_vertical"
+                android:hint="@string/txt_search_hint"
+                android:paddingLeft="12dp"
+                android:singleLine="true"
+                android:textColor="@color/txt_333_new"
+                android:textColorHint="@color/txt_a8a8a8_new"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginRight="@dimen/dp_10"
+                android:textCursorDrawable="@null"
+        />
+<!-- android:imeOptions="actionSearch"-->
+        <!--  <TextView
+                  android:id="@+id/tvSearch"
+                  style="@style/txt_c333_s16"
+                  android:layout_marginLeft="6dp"
+                  android:layout_marginRight="@dimen/dp_10"
+                  android:padding="@dimen/dp_10"
+                  android:text="@string/txt_search"/>-->
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:id="@+id/rvSearch"
+                                            app:layout_constraintTop_toBottomOf="@+id/llTitle"
+                                            app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

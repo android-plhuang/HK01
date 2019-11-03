@@ -1,0 +1,97 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: "config.gradle"
+buildscript {
+    ext.kotlin_version = '1.3.10'
+    ext.compile_sdk_version = 28
+    ext.build_tools_version = "28.0.0"
+    ext.min_sdk_version = 21
+    ext.target_sdk_version = 28
+
+    ext.android_support_version = '28.0.0'
+
+    ext.anko_version = '0.10.5'
+
+    ext.rx_kotlin_version = '2.2.0'
+    ext.rx_android_version = '2.1.0'
+
+    ext.ok_http_version = '3.6.0'
+    ext.retrofit_version = '2.2.0'
+
+    ext.dagger_version = '2.17'
+
+    ext.rx_lifecycle_version = '2.2.2'
+
+    ext.glide_version = "4.9.0"
+
+    ext.circle_imageView_version = "2.1.0"
+
+    ext.take_photo_version = "4.0.3"
+
+    ext.alert_view_version = "1.0.3"
+
+    ext.multi_state_view_version = '1.3.2'
+    ext.arouter_api_version = '1.2.2'
+    ext.arouter_compiler_version = '1.1.3'
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+        }
+        jcenter {url 'https://dl.bintray.com/android/android-tools'}
+        mavenCentral ()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.0'
+//        classpath 'com.android.tools.build:gradle:3.1.2'
+//        classpath 'com.android.tools.build:gradle:3.1.4'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath "io.realm:realm-gradle-plugin:5.11.0"
+
+    }
+}
+apply plugin: 'kotlin'
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+//        maven { url "https://maven.google.com" }
+//        google()
+
+        flatDir {
+            dirs 'libs'
+        }
+        jcenter {url 'https://dl.bintray.com/android/android-tools'}
+        mavenCentral ()
+        maven {
+            url 'https://maven.google.com'
+        }
+    }
+}
+
+/*task clean(type: Delete) {
+    delete rootProject.buildDir
+}*/
+repositories {
+    mavenCentral()
+
+}
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+
+}
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}

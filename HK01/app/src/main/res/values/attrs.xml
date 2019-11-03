@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<declare-styleable name="CommonLeftTxtRightTxtLine">
+        &lt;!&ndash;左边文字&ndash;&gt;
+        <attr name="lr_left_txt" format="string" />
+        <attr name="lr_left_size" format="dimension" />
+        <attr name="lr_left_color" format="color" />
+
+        <attr name="lr_left_icon" format="reference" />
+        &lt;!&ndash;右边文字&ndash;&gt;
+        <attr name="lr_right_txt" format="string" />
+        <attr name="lr_right_size" format="dimension" />
+        <attr name="lr_right_color" format="color" />
+        &lt;!&ndash;是否显示&ndash;&gt;
+        <attr name="lr_is_show_line" format="boolean" />
+        &lt;!&ndash;是否显示右边图标&ndash;&gt;
+        <attr name="lr_is_show_right_ic" format="boolean" />
+    </declare-styleable>
+    &lt;!&ndash;vip的签到item&ndash;&gt;
+    <declare-styleable name="CommonVip">
+        <attr name="lr_title_txt" format="string" />
+        <attr name="lr_value_txt" format="string" />
+        <attr name="lr_btn_txt" format="string" />
+        <attr name="lr_is_select" format="boolean" />
+    </declare-styleable>-->
+
+
+    <declare-styleable name="CommonSelectValue">
+        <attr name="lr_title_txt" format="string" />
+        <attr name="lr_value_txt" format="string" />
+        <attr name="lr_value_hint_txt" format="string" />
+        <attr name="lr_is_show_arrow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonSelectValueWithBord">
+        <attr name="ll_title_txt" format="string" />
+        <attr name="ll_value_txt" format="string" />
+        <attr name="ll_value_hint_txt" format="string" />
+        <attr name="ll_is_show_arrow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonInputWithBord">
+        <attr name="edit_txt" format="string" />
+        <attr name="edit_hint" format="string" />
+        <attr name="edit_is_password" format="boolean" />
+        <attr name="edit_icon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonSelectIconTxtIcon">
+        <attr name="iti_txt" format="string" />
+        <attr name="iti_value" format="string" />
+        <attr name="iti_value_color" format="color" />
+        <attr name="iti_icon" format="reference" />
+        <attr name="iti_show_bottom_line" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CommonTitleSwith">
+        <attr name="ts_txt" format="string" />
+        <attr name="ts_open" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CommonTitleValue">
+        <attr name="tv_txt" format="string" />
+        <attr name="tv_value" format="string" />
+
+    </declare-styleable>
+    <!--左边标题，右边输入框-->
+    <declare-styleable name="CommonTitleEdit">
+        <attr name="te_txt" format="string" />
+        <attr name="te_value" format="string" />
+        <attr name="te_hint" format="string" />
+
+    </declare-styleable>
+
+    <!--验证码-->
+    <declare-styleable name="CommonVerificationCode">
+        <attr name="cvc_left_iv" format="reference" />
+        <attr name="cvc_hint" format="string" />
+
+    </declare-styleable>
+
+
+    <!--录制视频的倒计时按钮-->
+    <declare-styleable name="TimerRecordView">
+        <!-- 字体大小 -->
+        <attr name="text_size" format="dimension" />
+        <!-- 内圆的背景 -->
+        <attr name="inside_circle_color" format="color" />
+        <!-- 外圆环的颜色 -->
+        <attr name="outside_circle_color" format="color" />
+        <!-- 动态圆环的颜色值 -->
+        <attr name="dynamic_arc_color" format="color" />
+        <attr name="text_color" format="color" />
+        <!-- 透明度 -->
+        <attr name="circle_and_outsidecircle_alpha" format="dimension" />
+    </declare-styleable>
+
+    <!--双向滑动选择区间-->
+    <!--线（进度条）宽度-->
+    <attr name="lineHeight" format="dimension" />
+    <!--字的大小 100元-->
+    <attr name="textSize" format="dimension" />
+    <!--字的颜色 100元-->
+    <attr name="textColor" format="color" />
+    <!--两个游标内部 线（进度条）的颜色-->
+    <attr name="inColor" format="color" />
+    <!--两个游标外部 线（进度条）的颜色-->
+    <attr name="outColor" format="color" />
+    <!--左边图标的图片-->
+    <attr name="imageLow" format="reference" />
+    <!--右边图标 的图片-->
+    <attr name="imageBig" format="reference" />
+    <!--游标 图片宽度-->
+    <attr name="imagewidth" format="dimension" />
+    <!--游标 图片高度-->
+    <attr name="imageheight" format="dimension" />
+    <!--是否有刻度线-->
+    <attr name="hasRule" format="boolean" />
+    <!--刻度的颜色-->
+    <attr name="ruleColor" format="color" />
+    <!--刻度上边的字 的颜色-->
+    <attr name="ruleTextColor" format="color" />
+    <!--单位 元-->
+    <attr name="unit" format="string" />
+    <!--单位份数-->
+    <attr name="equal" format="integer" />
+    <!--刻度单位 $-->
+    <attr name="ruleUnit" format="string" />
+    <!--刻度上边文字的size-->
+    <attr name="ruleTextSize" format="dimension" />
+    <!--刻度线的高度-->
+    <attr name="ruleLineHeight" format="dimension" />
+    <!--选择器的最大值-->
+    <attr name="bigValue" format="integer" />
+    <!--选择器的最小值-->
+    <attr name="smallValue" format="integer" />
+    <declare-styleable name="DoubleSlideSeekBar">
+        <attr name="lineHeight" />
+        <attr name="textSize" />
+        <attr name="textColor" />
+        <attr name="inColor" />
+        <attr name="outColor" />
+        <attr name="imageLow" />
+        <attr name="imageBig" />
+        <attr name="imagewidth" />
+        <attr name="imageheight" />
+        <attr name="hasRule" />
+        <attr name="ruleColor" />
+        <attr name="ruleTextColor" />
+        <attr name="unit" />
+        <attr name="equal" />
+        <attr name="ruleUnit" />
+        <attr name="ruleTextSize" />
+        <attr name="ruleLineHeight" />
+        <attr name="bigValue" />
+        <attr name="smallValue" />
+    </declare-styleable>
+
+    <!--圆弧进度条-->
+    <declare-styleable name="TasksCompletedView">
+        <attr name="radius" format="dimension" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="circleColor" format="color" />
+        <attr name="ringColor" format="color" />
+        <attr name="ringBgColor" format="color" />
+    </declare-styleable>
+    <!--升级的进度条-->
+    <declare-styleable name="UpdateAppNumberProgressBar">
+        <attr name="progress_current" format="integer" />
+        <attr name="progress_max" format="integer" />
+
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+
+        <attr name="progress_text_offset" format="dimension" />
+
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+    <!--日期选择器-->
+    <declare-styleable name="WheelPicker">
+        <attr name="wheel_data" format="reference" />
+        <attr name="wheel_selected_item_position" format="integer" />
+        <attr name="wheel_item_text_size" format="dimension" />
+        <attr name="wheel_item_text_color" format="color" />
+        <attr name="wheel_selected_item_text_color" format="color" />
+        <attr name="wheel_same_width" format="boolean" />
+        <attr name="wheel_maximum_width_text" format="string" />
+        <attr name="wheel_maximum_width_text_position" format="integer" />
+        <attr name="wheel_visible_item_count" format="integer" />
+        <attr name="wheel_item_space" format="dimension" />
+        <attr name="wheel_cyclic" format="boolean" />
+        <attr name="wheel_indicator" format="boolean" />
+        <attr name="wheel_indicator_color" format="color" />
+        <attr name="wheel_indicator_size" format="dimension" />
+        <attr name="wheel_curtain" format="boolean" />
+        <attr name="wheel_curtain_color" format="color" />
+        <attr name="wheel_atmospheric" format="boolean" />
+        <attr name="wheel_curved" format="boolean" />
+        <attr name="wheel_item_align" format="enum">
+            <enum name="center" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="waveview">
+        <attr name="waveview_color" format="color"></attr>
+        <attr name="waveview_radius" format="dimension"></attr>
+        <attr name="waveview_max_radius" format="dimension"></attr>
+    </declare-styleable>
+
+
+    <!--圆环进度条-->
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension" />
+        <attr name="textColor1" format="color" />
+        <attr name="textSize1" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean" />
+        <attr name="style">
+            <enum name="STROKE" value="0" />
+            <enum name="FILL" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!--侧滑删除-->
+    <declare-styleable name="SlideDeleteLayout">
+        <!--是否可以通过滑动，显示删除菜单，默认true-->
+        <attr name="slideEnable" format="boolean"/>
+        <!--是否是ios方式的滑动方式,默认true-->
+        <attr name="iosStyle" format="boolean"/>
+        <!--标记是左滑还是右滑显示删除菜单，默认左滑显示删除菜单-->
+        <attr name="leftSlide" format="boolean"/>
+    </declare-styleable>
+
+    <!--文字描边,动画-->
+    <declare-styleable name="StrokeTextView">
+        <attr name="outerColor" format="color|reference" />
+        <attr name="outerThickness" format="dimension|reference" />
+        <attr name="mTextSize" format="dimension|reference" />
+        <attr name="innerColor" format="color|reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,916 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+        <!--<item name="android:windowAnimationStyle">@style/AnimationActivity</item>-->
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/bg_white</item>
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme" />
+    <!--自定义Dialog学习-->
+
+    <!--线-->
+    <style name="line_m1_e8e8e8_new">
+        <item name="android:background">@color/line_e8e8e8</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="line_1m_e8e8e8_new">
+        <item name="android:background">@color/line_e8e8e8</item>
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="line_m1_dedede_new">
+        <item name="android:background">@color/line_dedede</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="line_m1_d5d5d5_new">
+        <item name="android:background">@color/line_d5d5d5</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="line_m1_e2e2e2_new">
+        <item name="android:background">@color/line_e2e2e2</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <!-- 加载弹框样式 -->
+    <style name="LightDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan
+        </item>
+    </style>
+
+    <style name="LightProgressDialog" parent="@style/LightDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <!--一些样式-->
+
+    <style name="mm">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="mw">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <!--字体样式-->
+    <style name="ww">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="txt_c333" parent="ww">
+        <item name="android:textColor">@color/stair_three_333</item>
+    </style>
+
+    <style name="txt_cfa443a" parent="ww">
+        <item name="android:textColor">@color/stair_fa443a</item>
+    </style>
+
+    <style name="txt_cfff" parent="ww">
+        <item name="android:textColor">@color/stair_three_fff</item>
+
+    </style>
+
+    <style name="txt_c27264b" parent="ww">
+        <item name="android:textColor">@color/stair_27264b</item>
+
+    </style>
+
+    <style name="txt_cffffff" parent="ww">
+        <item name="android:textColor">@color/stair_ffffff</item>
+
+    </style>
+
+    <style name="txt_cd1b358" parent="ww">
+        <item name="android:textColor">@color/stair_d1b358</item>
+
+    </style>
+
+    <style name="txt_8f8fb3" parent="ww">
+        <item name="android:textColor">@color/stair_8f8fb3</item>
+
+    </style>
+
+    <style name="txt_cf60" parent="ww">
+        <item name="android:textColor">@color/stair_ff6600</item>
+    </style>
+
+    <style name="txt_cf5222d" parent="ww">
+        <item name="android:textColor">@color/stair_f5222d</item>
+    </style>
+
+    <style name="txt_ffae00" parent="ww">
+        <item name="android:textColor">@color/stair_ffae00</item>
+    </style>
+
+    <style name="txt_888" parent="ww">
+        <item name="android:textColor">@color/stair_888</item>
+    </style>
+
+    <style name="txt_ff2323" parent="ww">
+        <item name="android:textColor">@color/stair_ff2323</item>
+    </style>
+
+    <style name="txt_137fe2" parent="ww">
+        <item name="android:textColor">@color/stair_137fe2</item>
+    </style>
+
+    <style name="txt_f696cb" parent="ww">
+        <item name="android:textColor">@color/stair_f696cb</item>
+    </style>
+
+    <style name="txt_56abe8" parent="ww">
+        <item name="android:textColor">@color/stair_56abe8</item>
+    </style>
+
+    <style name="txt_0d0906" parent="ww">
+        <item name="android:textColor">@color/stair_0d0906</item>
+    </style>
+
+    <style name="txt_c666" parent="ww">
+        <item name="android:textColor">@color/stair_666</item>
+    </style>
+
+    <style name="txt_cf00" parent="ww">
+        <item name="android:textColor">@color/stair_f00</item>
+    </style>
+
+    <style name="txt_c999" parent="ww">
+        <item name="android:textColor">@color/stair_999</item>
+    </style>
+
+    <style name="txt_c39" parent="ww">
+        <item name="android:textColor">@color/stair_39</item>
+    </style>
+
+    <style name="txt_ce18a14" parent="ww">
+        <item name="android:textColor">@color/stair_e18a14</item>
+    </style>
+
+    <style name="txt_f25c62" parent="ww">
+        <item name="android:textColor">@color/stair_f25c62</item>
+    </style>
+
+    <style name="txt_e71a41" parent="ww">
+        <item name="android:textColor">@color/stair_e71a41</item>
+    </style>
+
+    <style name="txt_fd8eaa" parent="ww">
+        <item name="android:textColor">@color/stair_fd8eaa</item>
+    </style>
+
+    <style name="txt_1a1a1a" parent="ww">
+        <item name="android:textColor">@color/stair_1a1a1a</item>
+    </style>
+
+    <style name="txt_ff638b" parent="ww">
+        <item name="android:textColor">@color/stair_ff638b</item>
+    </style>
+
+    <style name="txt_fbe037" parent="ww">
+        <item name="android:textColor">@color/stair_fbe037</item>
+    </style>
+
+    <style name="txt_bbb" parent="ww">
+        <item name="android:textColor">@color/stair_bbb</item>
+    </style>
+
+    <style name="txt_45454b" parent="ww">
+        <item name="android:textColor">@color/stair_45454b</item>
+    </style>
+
+
+    <style name="txt_c333_s48" parent="txt_c333">
+        <item name="android:textSize">@dimen/sp_48</item>
+    </style>
+
+    <style name="txt_c333_s14" parent="txt_c333">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="txt_c333_s13" parent="txt_c333">
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <style name="txt_c333_s10" parent="txt_c333">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="txt_c333_s11" parent="txt_c333">
+        <item name="android:textSize">@dimen/sp_11</item>
+    </style>
+
+    <style name="txt_c333_s12" parent="txt_c333">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="txt_c333_s16" parent="txt_c333">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="txt_c333_s17" parent="txt_c333">
+        <item name="android:textSize">@dimen/sp_17</item>
+    </style>
+
+    <style name="txt_c333_s15" parent="txt_c333">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="txt_c333_s18" parent="txt_c333">
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="txt_c333_s20" parent="txt_c333">
+        <item name="android:textSize">@dimen/sp_20</item>
+    </style>
+
+    <style name="txt_c333_s21" parent="txt_c333">
+        <item name="android:textSize">@dimen/sp_21</item>
+    </style>
+
+    <style name="txt_c333_s24" parent="txt_c333">
+        <item name="android:textSize">@dimen/sp_24</item>
+    </style>
+
+    <style name="txt_c333_s25" parent="txt_c333">
+        <item name="android:textSize">@dimen/sp_25</item>
+    </style>
+
+    <style name="txt_c333_s27" parent="txt_c333">
+        <item name="android:textSize">@dimen/sp_27</item>
+    </style>
+
+    <style name="txt_c333_s30" parent="txt_c333">
+        <item name="android:textSize">@dimen/sp_30</item>
+    </style>
+
+    <style name="txt_c333_s32" parent="txt_c333">
+        <item name="android:textSize">@dimen/sp_32</item>
+    </style>
+
+    <style name="txt_c333_s45" parent="txt_c333">
+        <item name="android:textSize">@dimen/sp_45</item>
+    </style>
+
+
+    <style name="txt_cfff_s8" parent="txt_cfff">
+        <item name="android:textSize">@dimen/sp_8</item>
+    </style>
+
+    <style name="txt_cfff_s10" parent="txt_cfff">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="txt_cfff_s12" parent="txt_cfff">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="txt_cfff_s14" parent="txt_cfff">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="txt_cfff_s15" parent="txt_cfff">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="txt_cfff_s16" parent="txt_cfff">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="txt_cfff_s18" parent="txt_cfff">
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="txt_cfff_s20" parent="txt_cfff">
+        <item name="android:textSize">@dimen/sp_20</item>
+    </style>
+
+    <style name="txt_cfff_s24" parent="txt_cfff">
+        <item name="android:textSize">@dimen/sp_24</item>
+    </style>
+
+    <style name="txt_cfff_s35" parent="txt_cfff">
+        <item name="android:textSize">@dimen/sp_35</item>
+    </style>
+
+    <style name="txt_c666_s9" parent="txt_c666">
+        <item name="android:textSize">@dimen/sp_9</item>
+    </style>
+
+    <style name="txt_c666_s12" parent="txt_c666">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="txt_c666_s13" parent="txt_c666">
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <style name="txt_c666_s14" parent="txt_c666">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="txt_c666_s15" parent="txt_c666">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="txt_cfa443a_10" parent="txt_cfa443a">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="txt_cf00_17" parent="txt_cf00">
+        <item name="android:textSize">@dimen/sp_17</item>
+    </style>
+
+    <style name="txt_c999_s9" parent="txt_c999">
+        <item name="android:textSize">@dimen/sp_9</item>
+    </style>
+
+    <style name="txt_c999_s10" parent="txt_c999">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="txt_c999_s11" parent="txt_c999">
+        <item name="android:textSize">@dimen/sp_11</item>
+    </style>
+
+    <style name="txt_c999_s12" parent="txt_c999">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="txt_c999_s13" parent="txt_c999">
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <style name="txt_c999_s14" parent="txt_c999">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="txt_c999_s15" parent="txt_c999">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="txt_c999_s16" parent="txt_c999">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="txt_c999_s17" parent="txt_c999">
+        <item name="android:textSize">@dimen/sp_17</item>
+    </style>
+
+
+    <style name="txt_cf60_s14" parent="txt_cf60">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="txt_cf60_s15" parent="txt_cf60">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+
+    <style name="txt_f5222d_s17" parent="txt_cf5222d">
+        <item name="android:textSize">@dimen/sp_17</item>
+    </style>
+
+    <style name="txt_ffae00_s11" parent="txt_ffae00">
+        <item name="android:textSize">@dimen/sp_11</item>
+    </style>
+
+    <style name="txt_ffae00_s12" parent="txt_ffae00">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="txt_ffae00_s13" parent="txt_ffae00">
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <style name="txt_f696cb_s15" parent="txt_f696cb">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="txt_56abe8_s15" parent="txt_56abe8">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="txt_0d0906_s13" parent="txt_0d0906">
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <style name="txt_0d0906_s14" parent="txt_0d0906">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="txt_0d0906_s15" parent="txt_0d0906">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="txt_0d0906_s17" parent="txt_0d0906">
+        <item name="android:textSize">@dimen/sp_17</item>
+    </style>
+
+    <style name="txt_0d0906_s20" parent="txt_0d0906">
+        <item name="android:textSize">@dimen/sp_20</item>
+    </style>
+
+    <style name="txt_0d0906_s23" parent="txt_0d0906">
+        <item name="android:textSize">@dimen/sp_23</item>
+    </style>
+
+    <style name="txt_ffae00_s28" parent="txt_ffae00">
+        <item name="android:textSize">@dimen/sp_28</item>
+    </style>
+
+    <style name="txt_888_s11" parent="txt_888">
+        <item name="android:textSize">@dimen/sp_11</item>
+    </style>
+
+    <style name="txt_888_s15" parent="txt_888">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="txt_ff2323_s15" parent="txt_ff2323">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="txt_137fe2_s18" parent="txt_137fe2">
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+
+    <style name="line_h_f2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#f2f2f2</item>
+    </style>
+
+    <style name="line_v_f2">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#f2f2f2</item>
+    </style>
+
+
+    <style name="line_h_f5">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#f2f2f2</item>
+    </style>
+
+    <style name="line_h_f3_big">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:background">#f3f3f3</item>
+    </style>
+
+    <style name="line_v_f5">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#f2f2f2</item>
+    </style>
+
+    <style name="line_big">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:background">#f0f0f0</item>
+    </style>
+
+    <style name="line_h_e5">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#e5e5e5</item>
+    </style>
+
+    <style name="line_v_e5">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#e5e5e5</item>
+    </style>
+
+    <style name="line_h_e6">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#e6e6e6</item>
+    </style>
+
+    <style name="line_v_e6">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#e6e6e6</item>
+    </style>
+
+    <style name="txt_cd1b358_12" parent="txt_cd1b358">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="txt_8f8fb3_12" parent="txt_8f8fb3">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="txt_c27264b_10" parent="txt_c27264b">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="txt_ffffff_8" parent="txt_cffffff">
+        <item name="android:textSize">@dimen/sp_8</item>
+    </style>
+
+    <style name="txt_ffffff_10" parent="txt_cffffff">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="txt_ffffff_12" parent="txt_cffffff">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="txt_ffffff_13" parent="txt_cffffff">
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <style name="txt_ffffff_11" parent="txt_cffffff">
+        <item name="android:textSize">@dimen/sp_11</item>
+    </style>
+
+    <style name="txt_ffffff_15" parent="txt_cffffff">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="txt_ffffff_17" parent="txt_cffffff">
+        <item name="android:textSize">@dimen/sp_17</item>
+    </style>
+
+
+    <style name="view_f0_10">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_10</item>
+        <item name="android:background">#f0f0f0</item>
+    </style>
+
+    <style name="txt_c39_s48" parent="txt_c39">
+        <item name="android:textSize">@dimen/sp_48</item>
+    </style>
+
+    <style name="txt_c39_s14" parent="txt_c39">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="txt_c39_s10" parent="txt_c39">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="txt_c39_s11" parent="txt_c39">
+        <item name="android:textSize">@dimen/sp_11</item>
+    </style>
+
+    <style name="txt_c39_s12" parent="txt_c39">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="txt_c39_s16" parent="txt_c39">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="txt_c39_s17" parent="txt_c39">
+        <item name="android:textSize">@dimen/sp_17</item>
+    </style>
+
+    <style name="txt_c39_s15" parent="txt_c39">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="txt_c39_s18" parent="txt_c39">
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="txt_c39_s20" parent="txt_c39">
+        <item name="android:textSize">@dimen/sp_20</item>
+    </style>
+
+    <style name="txt_c39_s24" parent="txt_c39">
+        <item name="android:textSize">@dimen/sp_24</item>
+    </style>
+
+    <style name="txt_c39_s25" parent="txt_c39">
+        <item name="android:textSize">@dimen/sp_25</item>
+    </style>
+
+    <style name="txt_c39_s32" parent="txt_c39">
+        <item name="android:textSize">@dimen/sp_32</item>
+    </style>
+
+    <!--e18a14-->
+    <style name="txt_ce18a14_s12" parent="txt_ce18a14">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+    <!--f25c62-->
+    <style name="txt_f25c62_s15" parent="txt_f25c62">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="txt_f25c62_s16" parent="txt_f25c62">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="txt_f25c62_s17" parent="txt_f25c62">
+        <item name="android:textSize">@dimen/sp_17</item>
+    </style>
+
+    <style name="txt_f25c62_s11" parent="txt_f25c62">
+        <item name="android:textSize">@dimen/sp_11</item>
+    </style>
+
+    <style name="txt_f25c62_s12" parent="txt_f25c62">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="txt_f25c62_s14" parent="txt_f25c62">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+
+    <style name="txt_f25c62_s20" parent="txt_f25c62">
+        <item name="android:textSize">@dimen/sp_20</item>
+    </style>
+
+    <style name="txt_f25c62_s24" parent="txt_f25c62">
+        <item name="android:textSize">@dimen/sp_24</item>
+    </style>
+
+    <!--e71a41-->
+    <style name="txt_e71a41_s16" parent="txt_e71a41">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <!--e71a41-->
+    <style name="txt_fd8eaa_s10" parent="txt_fd8eaa">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <!--1a1a1a-->
+    <style name="txt_1a1a1a_s12" parent="txt_1a1a1a">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <!--ff638b-->
+    <style name="txt_ff638b_s12" parent="txt_ff638b">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="txt_ff638b_s13" parent="txt_ff638b">
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <style name="txt_ff638b_s14" parent="txt_ff638b">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="txt_ff638b_s15" parent="txt_ff638b">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="txt_ff638b_s17" parent="txt_ff638b">
+        <item name="android:textSize">@dimen/sp_17</item>
+    </style>
+
+    <style name="txt_ff638b_s20" parent="txt_ff638b">
+        <item name="android:textSize">@dimen/sp_20</item>
+    </style>
+
+    <style name="txt_fbe037_s13" parent="txt_fbe037">
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <!--ff638b-->
+    <style name="txt_bbb_s12" parent="txt_bbb">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="txt_bbb_s14" parent="txt_bbb">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="txt_45454b_s15" parent="txt_45454b">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+
+    <style name="item_linear_50">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/item_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+    <!--弹窗样式-->
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="Translucent_NoTitle" parent="android:style/Theme.Dialog">
+
+        <item name="android:background">#00000000</item> <!-- 设置自定义布局的背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent
+        </item>  <!-- 设置window背景透明，也就是去边框 -->
+    </style>
+
+    <!--popuwindow动画效果-->
+    <style name="pop_animation" parent="android:Animation">
+        <!-- <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_gone</item>-->
+    </style>
+
+    <!--dialog从底部弹出的样式-->
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+     <!--   <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>-->
+        <item name="android:backgroundDimAmount">0.2</item>
+    </style>
+
+    <!-- ActionSheet进出动画 -->
+   <!-- <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>-->
+    <!--升级弹窗样式-->
+    <style name="UpdateAppDialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <!--升级弹窗进度条-->
+    <style name="UpdateAppNumberProgressBar_Red">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#e94339</item>
+
+        <item name="progress_text_size">12sp</item>
+        <item name="progress_text_color">#e94339</item>
+
+        <item name="progress_reached_bar_height">4dp</item>
+        <item name="progress_unreached_bar_height">3dp</item>
+    </style>
+
+    <style name="txt_dialog_333_15">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_45</item>
+        <item name="android:textColor">@color/txt_333_new</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="line_f2f3f4_5">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_5</item>
+        <item name="android:background">#f2f3f4</item>
+    </style>
+
+    <!--登录的复选框样式-->
+    <style name="CustomCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <!-- <item name="android:button">@drawable/select_cb_login</item>-->
+    </style>
+
+    <style name="btn_next">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <!--<item name="android:background">@drawable/selector_btn_login_bg</item>-->
+        <item name="android:enabled">false</item>
+        <item name="android:textSize">@dimen/sp_17</item>
+        <item name="android:textStyle">bold</item>
+        <!--<item name="android:textColor">@drawable/selector_btn_txt</item>-->
+    </style>
+
+    <!--默认按钮样式-->
+    <style name="btn" parent="Base.Widget.AppCompat.Button">
+        <item name="android:minHeight">@dimen/dp_44</item>
+        <item name="android:minWidth">@dimen/dp_44</item>
+        <item name="android:layout_height">@dimen/dp_44</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textColor">@color/txt_fff_new</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <!-- 防止欢迎页白屏或者黑屏，设置图片 -->
+    <style name="SplashTheme" parent="AppTheme">
+        <!--<item name="android:windowBackground">@drawable/icon_splash_bg</item>-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--自定义Dialog样式-->
+    <style name="customDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/notAnimation</item>
+    </style>
+
+    <style name="notAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--自定义Dialog样式,用于礼物弹窗-->
+    <style name="customDialogNoBg" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+    </style>
+
+    <style name="HorizontalLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/color_e2e2e2</item>
+    </style>
+
+    <!--登录输入-->
+    <style name="LoginInputStyle">
+        <item name="android:textColor">@color/txt_fff_new</item>
+        <item name="android:textColorHint">@color/txt_999999_new</item>
+        <item name="android:drawablePadding">@dimen/dp_10</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:background">@null</item>
+    </style>
+
+</resources>

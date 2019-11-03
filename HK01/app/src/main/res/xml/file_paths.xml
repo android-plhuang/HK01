@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--<files-path name="download" path="Documents" />-->
+    <external-path path="Android/data/com.example.hk01/" name="files_root" />
+    <external-path path="." name="external_storage_root" />
+    <!--com.expo.tea.fileprovider-->
+</paths>
